@@ -24,6 +24,11 @@ const Toolbar = () => {
               <NavLink to='/contacts' className='nav-link'>
                 Контакты
               </NavLink>
+            </li>{' '}
+            <li className='nav-item'>
+              <NavLink to='/cart' className='nav-link'>
+                Корзина
+              </NavLink>
             </li>
           </ul>
         </div>
