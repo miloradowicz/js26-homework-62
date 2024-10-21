@@ -13,3 +13,8 @@ export interface ContactInfo {
   get openHours(): string;
   get deliveryHours(): string;
 }
+
+export interface CartItemInfo {
+  get dish(): DishInfo;
+  get qty(): number;
+}
