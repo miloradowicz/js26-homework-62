@@ -29,7 +29,7 @@ const Toolbar: FC<ToolbarProps> = ({ cartCount }) => {
               <NavLink to='/contacts' className='nav-link'>
                 Контакты
               </NavLink>
-            </li>{' '}
+            </li>
             <li className='nav-item'>
               <NavLink to='/cart' className='nav-link'>
                 Корзина{cartCount ? <span className='badge text-bg-secondary'>{cartCount}</span> : null}
