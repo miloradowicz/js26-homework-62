@@ -7,13 +7,13 @@ import AboutUs from './containers/AboutUs/AboutUs';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NotFound from './containers/NotFound/NotFound';
 import { CartItemInfo, DishInfo } from './types';
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import Cart from './containers/Cart/Cart';
 
 function App() {
   const [cart, setCart] = useState<CartItemInfo[]>([]);
 
-  const addToCart = (dish: DishInfo) => {
+  const addToCart = useCallback((dish: DishInfo) => {
     setCart((cart) => {
       const _cart = [...cart];
 
@@ -27,7 +27,7 @@ function App() {
 
       return _cart;
     });
-  };
+  }, []);
 
   return (
     <>

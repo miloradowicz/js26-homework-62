@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, memo } from 'react';
 import DishCard from '../../components/DishCard/DishCard';
 import { DishInfo } from '../../types';
 
@@ -19,4 +19,4 @@ const Home: FC<HomeProps> = ({ dishes, addToCart }) => {
   );
 };
 
-export default Home;
+export default memo(Home);
