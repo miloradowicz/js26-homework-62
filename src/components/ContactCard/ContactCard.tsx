@@ -10,14 +10,12 @@ const ContactCard: FC<ContactCardProps> = ({ info: { title, address, openHours, 
     <div className='card h-100'>
       <div className='card-body'>
         <h5 className='card-title'>{title}</h5>
-        <p>
-          <h6 className='card-subtitle'>{address}</h6>
-        </p>
+        <h6 className='card-subtitle mb-3'>{address}</h6>
         <p className='card-text'>
-          <h6>Доставка</h6>
+          <span className='fw-semibold d-block mb-1'>Доставка</span>
           {deliveryHours}
         </p>
-        <h6>Ресторан и самовывоз</h6>
+        <span className='fw-semibold d-block mb-1'>Ресторан и самовывоз</span>
         <p className='card-text'>{openHours}</p>
       </div>
     </div>
