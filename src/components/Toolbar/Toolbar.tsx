@@ -12,17 +12,17 @@ const Toolbar = () => {
           <ul className='nav'>
             <li className='nav-item'>
               <NavLink to='/' className='nav-link'>
-                Home
+                Главная
               </NavLink>
             </li>
             <li className='nav-item'>
               <NavLink to='/about-us' className='nav-link'>
-                About Us
+                О нас
               </NavLink>
             </li>
             <li className='nav-item'>
               <NavLink to='/contacts' className='nav-link'>
-                Contacts
+                Контакты
               </NavLink>
             </li>
           </ul>
