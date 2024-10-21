@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, memo } from 'react';
 import DishCard from '../../components/DishCard/DishCard';
 import { DishInfo } from '../../types';
 
@@ -8,6 +8,8 @@ interface HomeProps {
 }
 
 const Home: FC<HomeProps> = ({ dishes, addToCart }) => {
+  console.log('home render');
+
   return (
     <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-2'>
       {dishes.map((x) => (
@@ -19,4 +21,4 @@ const Home: FC<HomeProps> = ({ dishes, addToCart }) => {
   );
 };
 
-export default Home;
+export default memo(Home);
