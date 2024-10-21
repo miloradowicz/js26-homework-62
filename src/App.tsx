@@ -5,6 +5,7 @@ import Home from './containers/Home/Home';
 import Contacts from './containers/Contacts/Contacts';
 import AboutUs from './containers/AboutUs/AboutUs';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import NotFound from './containers/NotFound/NotFound';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/' element={<Home dishes={dishes} />} />
           <Route path='/about-us' element={<AboutUs />} />
           <Route path='/contacts' element={<Contacts contacts={contacts} />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </main>
     </>
