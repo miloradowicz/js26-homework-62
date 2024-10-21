@@ -11,7 +11,7 @@ const Contacts: FC<ContactsProps> = ({ contacts }) => {
     <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-2'>
       {contacts.map((x) => (
         <div className='col'>
-          <ContactCard key={x.id} contactInfo={x} />
+          <ContactCard key={x.id} info={x} />
         </div>
       ))}
     </div>

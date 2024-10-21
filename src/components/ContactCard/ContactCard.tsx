@@ -2,10 +2,10 @@ import { FC } from 'react';
 import { ContactInfo } from '../../types';
 
 interface ContactCardProps {
-  contactInfo: ContactInfo;
+  info: ContactInfo;
 }
 
-const ContactCard: FC<ContactCardProps> = ({ contactInfo: { title, address, openHours, deliveryHours } }) => {
+const ContactCard: FC<ContactCardProps> = ({ info: { title, address, openHours, deliveryHours } }) => {
   return (
     <div className='card h-100'>
       <div className='card-body'>
