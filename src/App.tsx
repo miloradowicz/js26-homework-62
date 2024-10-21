@@ -32,7 +32,7 @@ function App() {
   return (
     <>
       <header>
-        <Toolbar />
+        <Toolbar cartCount={cart.reduce((a, x) => a + x.qty, 0)} />
       </header>
       <main className='container p-5'>
         <Routes>

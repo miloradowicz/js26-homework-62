@@ -1,7 +1,12 @@
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../../assets/images/logo.svg';
+import { FC } from 'react';
 
-const Toolbar = () => {
+interface ToolbarProps {
+  cartCount: number;
+}
+
+const Toolbar: FC<ToolbarProps> = ({ cartCount }) => {
   return (
     <>
       <nav className='navbar bg-light px-5'>
@@ -27,7 +32,7 @@ const Toolbar = () => {
             </li>{' '}
             <li className='nav-item'>
               <NavLink to='/cart' className='nav-link'>
-                Корзина
+                Корзина{cartCount ? <span className='badge text-bg-secondary'>{cartCount}</span> : null}
               </NavLink>
             </li>
           </ul>
